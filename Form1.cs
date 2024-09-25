@@ -12,7 +12,7 @@ namespace _1_3
 {
     public partial class Form1 : Form
     {
-        public const double PI = 3.14;
+        public const float PI = 3.14f;
         public Form1()
         {
             InitializeComponent();
