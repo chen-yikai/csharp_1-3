@@ -33,6 +33,32 @@ namespace _1_3
             diameter.Text = diameterRes.ToString();
             perimeter.Text = perimeterRes.ToString();
             area.Text = areaRes.ToString();
+
+           
+        }
+
+        private void plusCalc_Click(object sender, EventArgs e)
+        {
+            double plusRes = double.Parse(plusA.Text) + double.Parse(plusB.Text);
+            plusResult.Text = plusRes.ToString();
+        }
+
+        private void minusCalc_Click(object sender, EventArgs e)
+        {
+            double minusRes = double.Parse(minusA.Text) - double.Parse(minusB.Text);
+            minusResult.Text = minusRes.ToString();
+        }
+
+        private void multiplyCalc_Click(object sender, EventArgs e)
+        {
+            double multiplyRes = double.Parse(multiplyA.Text) * double.Parse(multiplyB.Text);
+            multiplyResult.Text = multiplyRes.ToString();
+        }
+
+        private void divisionCalc_Click(object sender, EventArgs e)
+        {
+            double divisionRes = double.Parse(dividedA.Text) / double.Parse(dividedB.Text);
+            divisionResult.Text = divisionRes.ToString();
         }
     }
 }
