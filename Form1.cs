@@ -18,11 +18,6 @@ namespace _1_3
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void calc_click(object sender, EventArgs e)
         {
             double radius = double.Parse(input.Text); //宣告輸入半徑
