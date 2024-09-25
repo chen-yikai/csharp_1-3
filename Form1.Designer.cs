@@ -28,34 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.calc = new System.Windows.Forms.Button();
+            this.input = new System.Windows.Forms.TextBox();
             this.text1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.diameter = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.area = new System.Windows.Forms.Label();
+            this.perimeter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // calc
             // 
-            this.button1.Font = new System.Drawing.Font("新細明體", 15F);
-            this.button1.Location = new System.Drawing.Point(291, 30);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "計算";
-            this.button1.UseVisualStyleBackColor = true;
+            this.calc.Font = new System.Drawing.Font("新細明體", 15F);
+            this.calc.Location = new System.Drawing.Point(291, 30);
+            this.calc.Name = "calc";
+            this.calc.Size = new System.Drawing.Size(104, 50);
+            this.calc.TabIndex = 0;
+            this.calc.Text = "計算";
+            this.calc.UseVisualStyleBackColor = true;
+            this.calc.Click += new System.EventHandler(this.calc_click);
             // 
-            // textBox1
+            // input
             // 
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 15F);
-            this.textBox1.Location = new System.Drawing.Point(107, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 31);
-            this.textBox1.TabIndex = 1;
+            this.input.Font = new System.Drawing.Font("新細明體", 15F);
+            this.input.Location = new System.Drawing.Point(107, 30);
+            this.input.Name = "input";
+            this.input.Size = new System.Drawing.Size(127, 31);
+            this.input.TabIndex = 1;
             // 
             // text1
             // 
@@ -77,15 +78,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "圓周長";
             // 
-            // label3
+            // diameter
             // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("新細明體", 15F);
-            this.label3.Location = new System.Drawing.Point(107, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(2, 22);
-            this.label3.TabIndex = 4;
+            this.diameter.AutoSize = true;
+            this.diameter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.diameter.Font = new System.Drawing.Font("新細明體", 15F);
+            this.diameter.Location = new System.Drawing.Point(107, 85);
+            this.diameter.Name = "diameter";
+            this.diameter.Size = new System.Drawing.Size(2, 22);
+            this.diameter.TabIndex = 4;
             // 
             // label4
             // 
@@ -107,42 +108,43 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "圓面積";
             // 
-            // label1
+            // area
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("新細明體", 15F);
-            this.label1.Location = new System.Drawing.Point(107, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(2, 22);
-            this.label1.TabIndex = 8;
+            this.area.AutoSize = true;
+            this.area.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.area.Font = new System.Drawing.Font("新細明體", 15F);
+            this.area.Location = new System.Drawing.Point(107, 168);
+            this.area.Name = "area";
+            this.area.Size = new System.Drawing.Size(2, 22);
+            this.area.TabIndex = 8;
             // 
-            // label5
+            // perimeter
             // 
-            this.label5.AutoSize = true;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("新細明體", 15F);
-            this.label5.Location = new System.Drawing.Point(107, 127);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(2, 22);
-            this.label5.TabIndex = 9;
+            this.perimeter.AutoSize = true;
+            this.perimeter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.perimeter.Font = new System.Drawing.Font("新細明體", 15F);
+            this.perimeter.Location = new System.Drawing.Point(107, 127);
+            this.perimeter.Name = "perimeter";
+            this.perimeter.Size = new System.Drawing.Size(2, 22);
+            this.perimeter.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 223);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.perimeter);
+            this.Controls.Add(this.area);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.diameter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.text1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.input);
+            this.Controls.Add(this.calc);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,15 +152,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button calc;
+        private System.Windows.Forms.TextBox input;
         private System.Windows.Forms.Label text1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label diameter;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label area;
+        private System.Windows.Forms.Label perimeter;
     }
 }
 
