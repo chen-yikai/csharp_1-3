@@ -25,7 +25,7 @@ namespace _1_3
 
         private void calc_click(object sender, EventArgs e)
         {
-            double radius = double.Parse(input.Text);
+            double radius = double.Parse(input.Text); //convert input text from String to double
             double diameterRes = radius * 2;
             double perimeterRes = diameterRes * PI;
             double areaRes = Math.Pow(radius, 2) * PI;
